@@ -56,6 +56,16 @@ const Login = () => {
                 className="border-b-2 border-gray-300 p-2 outline-none mb-6"/>
             </div>
             <button className="w-full py-3 font-medium bg-primary text-white rounded cursor-pointer hover:bg-primary/90 transition-all" type="submit">Login</button>
+            <button
+              type="button"
+              onClick={() => {
+                setEmail("admin@example.com");
+                setPassword("admin123");
+              }}
+              className="w-full mb-3 mt-2 py-2 border border-primary text-primary rounded hover:bg-primary/10"
+            >
+              Use Demo Credentials
+            </button>
           </form>
         </div>
       </div>
